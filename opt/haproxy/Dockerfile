@@ -9,6 +9,4 @@ mkdir /run/haproxy && \
 mkdir --parents /var/lib/${HAPROXY_USER} && \
 chown -R ${HAPROXY_USER}:${HAPROXY_USER} /var/lib/${HAPROXY_USER}
 
-#COPY haproxy-test.cfg /usr/local/etc/haproxy/haproxy.cfg
-
 CMD ["haproxy", "-db", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]

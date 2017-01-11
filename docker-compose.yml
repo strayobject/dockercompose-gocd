@@ -28,7 +28,6 @@ services:
     build:
       context: .
       dockerfile: opt/haproxy/Dockerfile
-    #image: haproxy:1.7
     volumes:
       - ./opt/haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
       - ./opt/haproxy/haproxy.pem:/etc/ssl/private/haproxy.pem
